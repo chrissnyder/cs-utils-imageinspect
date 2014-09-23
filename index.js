@@ -34,7 +34,6 @@
       this.imageContainer = this.el.querySelector('.image-container');
       this.image = new Image;
       this.image.src = this.inspect.src;
-      this.imageContainer.style.backgroundImage = "url(" + this.inspect.src + ")";
       this.el.style.width = "" + this.width + "px";
       this.el.style.height = "" + this.height + "px";
       this.imageContainer.style.width = "" + this.width + "px";
@@ -76,6 +75,7 @@
 
     ImageInspect.prototype.onMouseOver = function(e) {
       this.attach();
+      this.imageContainer.style.backgroundImage = "url(" + this.inspect.src + ")";
       this.viewing = true;
       return this.el.style.display = 'block';
     };

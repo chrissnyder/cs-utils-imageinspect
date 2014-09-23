@@ -25,8 +25,6 @@ class ImageInspect
     @image = new Image
     @image.src = @inspect.src
 
-    @imageContainer.style.backgroundImage = "url(#{ @inspect.src })"
-
     @el.style.width = "#{ @width }px"
     @el.style.height = "#{ @height }px"
     @imageContainer.style.width = "#{ @width }px"
@@ -62,6 +60,7 @@ class ImageInspect
   onMouseOver: (e) =>
     @attach()
 
+    @imageContainer.style.backgroundImage = "url(#{ @inspect.src })"
     @viewing = true
     @el.style.display = 'block'
 
