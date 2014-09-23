@@ -1,0 +1,13 @@
+#cs-utils-imageinspect {
+  border: 1px solid black;
+  display: none;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+}
+
+#cs-utils-imageinspect .image-container {
+  background-repeat: no-repeat;
+}

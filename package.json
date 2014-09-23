@@ -1,0 +1,7 @@
+{
+  "name": "cs-utils-imageinspect",
+  "version": "0.0.1",
+  "scripts": {
+    "watch": "coffee -cw index.coffee"
+  }
+}
